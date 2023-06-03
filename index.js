@@ -24,7 +24,7 @@ io.on("connection",(socket)=>{
     
  //socket.broadcast.emit("online",count)        //It sends count  to everyone except newone
  //io.emit("online",count)     //It sends count value to everyone
- socket.emit("online",count)   //It sends count value to newone not to everyone
+   io.emit("online",count)   //It sends count value to newone not to everyone
   socket.emit("blah","hello from server 1")
 
 
